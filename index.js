@@ -129,7 +129,8 @@ function collectPosts(data) {
 			},
 			frontmatter: {
 				title: getPostTitle(post),
-				date: getPostDate(post)
+				date: getPostDate(post),
+				slug: getPostSlug(post),
 			},
 			content: getPostContent(post, turndownService)
 		}));
